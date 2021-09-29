@@ -3,11 +3,11 @@ import firebase from 'firebase'
 export function fireInit(func) {
 	// !!!! Replace with your own Firebase settings !!!!!
 	var config = {
-	  apiKey: '!! Replace with your own Firebase settings !!',
-	  authDomain: '!! Replace with your own Firebase settings !!',
-	  databaseURL: '!! Replace with your own Firebase settings !!',
-	  storageBucket: '!! Replace with your own Firebase settings !!'
-	}
+      apiKey: 'AIzaSyBgfMAGvnlqEWJz59xSfJ2rrJPjpQPXgDY',
+      authDomain: 'localhost',
+      databaseURL: 'https://playlist-93f0b-default-rtdb.firebaseio.com/',
+      storageBucket: 'gs://playlist-93fob.appspot.com'
+    }
 	firebase.initializeApp(config)
 
 	firebase.auth().onAuthStateChanged(function (user) {
