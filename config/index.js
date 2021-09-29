@@ -4,9 +4,9 @@ var path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
-    index: path.resolve(__dirname, '../dist/index.html'),
-    auth: path.resolve(__dirname, '../dist/auth.html'),
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    index: path.resolve(__dirname, '../public/index.html'),
+    auth: path.resolve(__dirname, '../public/auth.html'),
+    assetsRoot: path.resolve(__dirname, '../public'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     productionSourceMap: true,
